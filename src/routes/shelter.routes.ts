@@ -6,7 +6,7 @@ const router = Router()
 
 router.post("/insert", animalValidation, insert)
 router.get("/findAll", findAll)
-router.get("/findById", findById)
+router.get("/findById/:id", findById)
 router.patch("/update/:id", update)
 router.delete("/delete/:id", deleteAnimal)
 
